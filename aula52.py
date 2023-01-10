@@ -19,8 +19,7 @@ while True:
             lista.append(user_input_list)
             print(lista)
         else:
-            print('Por favor, insira um valor válido!')
-        continue
+            print('Por favor, insira um valor válido!')        
     elif option == 'a':        
         for index, name in enumerate(lista):
                 print(index, name)
@@ -34,7 +33,6 @@ while True:
                     print(lista)
         else:
             print('O índice não existe na lista!')
-        continue
     elif option == 'l':
         if lista == []:
             print('Nada para listar')
@@ -42,7 +40,6 @@ while True:
             os.system('cls')
             for index, name in enumerate(lista):
                 print(index, name)
-        continue    
     elif option == '0':
         print('Encerrando...')
         break
