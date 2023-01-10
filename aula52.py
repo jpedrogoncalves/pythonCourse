@@ -7,6 +7,7 @@ erros de índices inexistentes na lista.
 """
 lista = []
 option = ''
+import os
 
 while True:
     option = input('[i]nserir / [a]pagar / [l]istar / 0 - Encerrar: ').lower()
@@ -14,6 +15,7 @@ while True:
     if option == 'i':        
         user_input_list = input('Insira o produto a ser inserido: ')
         if user_input_list != "":
+            os.system('cls')
             lista.append(user_input_list)
             print(lista)
         else:
@@ -37,6 +39,7 @@ while True:
         if lista == []:
             print('Nada para listar')
         else:
+            os.system('cls')
             for index, name in enumerate(lista):
                 print(index, name)
         continue    
