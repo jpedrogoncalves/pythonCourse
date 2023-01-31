@@ -7,6 +7,8 @@ lista = []
 lista = [x * 2 for x in range(10)]
 # print(lista)
 
+#mapeamento: pegar dados de uma lista, transformar e jogar em outra
+
 produtos = [
     {'nome' : 'p1', 'preco' : 10},
     {'nome' : 'p2', 'preco' : 15},
