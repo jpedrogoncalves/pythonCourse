@@ -1,0 +1,20 @@
+{
+  "nome": "Jo\u00e3o",
+  "sobrenome": [
+    {
+      "rua 1": "R1",
+      "numero": 32
+    },
+    {
+      "rua 2": "R2",
+      "numero": 33
+    }
+  ],
+  "altura": 1.67,
+  "numeros_preferidos": [
+    6,
+    9
+  ],
+  "dev": true,
+  "nada": null
+}
