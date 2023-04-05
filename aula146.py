@@ -9,3 +9,31 @@
 # Adicionando notas em exceções (3.11.0)
 class MyError(Exception):
     ...
+
+class OutroError(Exception):
+    ...
+
+def levantar():
+    # podemos mandar várias coisas no erro:
+    exception_ = MyError('a', 'b', 'c')
+    # e chega no error em args
+    raise exception_
+
+# traceback = caminho até o erro
+
+# tratando o erro
+try:
+    levantar()
+except (MyError, ZeroDivisionError) as error:
+    """
+        nesse caso, não temos como saber o nome do erro
+        porque estamos tratando de duas classes.
+        para saber o nome da classe, podemos usar:
+    """
+    print(error.__class__.__name__)
+    print(error)
+
+    exception_ = OutroError('vou lançar de novo')
+
+# relançando a exceção:
+    raise exception_ from error
