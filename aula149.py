@@ -38,16 +38,14 @@ class MyOpen:
         # *print(class_exception)
         # *print(exception_)
         # *print(traceback_)
-        exception_.add_note('Minha nota')
+        # exception_.add_note('Minha nota')
 
         # ! fazendo o erro passar despercebido
         # ! return True 
 
-
-
 with MyOpen('aula149.txt', 'w') as arquivo:
     # * arquivo tem o retorno de __enter__
     arquivo.write('Linha 1\n')
-    arquivo.write('Linha 2\n', 123)
+    arquivo.write('Linha 2\n')
     arquivo.write('Linha 3\n')
     print('WITH', arquivo)
